@@ -24,6 +24,9 @@
   background: #2f3676;
   clip-path: ellipse(90% 90% at 20% 0%);
   padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .headerForm h1 {
@@ -31,6 +34,11 @@
   color: white;
   font-size: 24px;
   margin-bottom: 40px;
+}
+
+.headerForm div {
+  width: 150px;
+  height: 150px;
 }
 
 .mainForm {
@@ -48,6 +56,10 @@
 
 .containerCheckBox label {
   margin-left: 10px;
+}
+
+.containerCheckBox input {
+  cursor: pointer;
 }
 
 .containerStickers {
@@ -95,6 +107,8 @@
   background: #dde2e8;
   padding: 10px;
   font-size: 18px;
+  resize: none;
+  outline: none;
 }
 
 .containerSubmit {
@@ -112,4 +126,33 @@
   padding: 10px 40px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.error {
+  color: red;
+}
+
+.popUp {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+}
+
+.popUp > div {
+  width: 500px;
+  height: 200px;
+  border-radius: 15px;
+  background: white;
+  margin: auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.popUp ul {
+  display: flex;
+  flex-direction: column;
 }
