@@ -10,7 +10,7 @@
   margin: auto;
   border-radius: 15px;
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .cardForm form {
